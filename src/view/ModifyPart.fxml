@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModifyPartController">
+    <children>
+        <VBox prefHeight="400.0" prefWidth="500.0">
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="500.0" spacing="50.0">
+                    <children>
+                        <Label text="Modify Part">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <RadioButton fx:id="modPartInHouseRadBtn" mnemonicParsing="false" onAction="#modPartInHouseRadBtn" text="In-House">
+                            <toggleGroup>
+                                <ToggleGroup fx:id="modifyToggleGroup" />
+                            </toggleGroup></RadioButton>
+                        <RadioButton fx:id="modPartOutsourcedRadBtn" layoutX="31.0" layoutY="10.0" mnemonicParsing="false" onAction="#onActmodPartOutsourcedRadBtn" text="Outsourced" toggleGroup="$modifyToggleGroup" />
+                    </children>
+                    <padding>
+                        <Insets left="50.0" right="50.0" />
+                    </padding>
+                </HBox>
+                <GridPane>
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="92.66668701171875" minWidth="10.0" prefWidth="59.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="154.33331298828125" minWidth="10.0" prefWidth="141.33333333333337" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <padding>
+                        <Insets left="50.0" right="50.0" />
+                    </padding>
+                    <children>
+                        <Label text="ID" />
+                        <Label text="Name" GridPane.rowIndex="1" />
+                        <Label text="Inv" GridPane.rowIndex="2" />
+                        <Label text="Price/Cost" GridPane.rowIndex="3" />
+                        <Label text="Max" GridPane.rowIndex="4" />
+                        <Label fx:id="modPartMachineOrCompLabel" text="Machine ID" GridPane.rowIndex="5" />
+                        <Label text="Min" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                            <GridPane.margin>
+                                <Insets left="20.0" />
+                            </GridPane.margin>
+                        </Label>
+                        <TextField fx:id="ModIdPartText" disable="true" promptText="Auto Gen-Disabled" GridPane.columnIndex="1">
+                            <font>
+                                <Font name="System Italic" size="10.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="modNamePartText" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="modInvPartText" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="modPricePartText" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField fx:id="modMaxPartText" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <TextField fx:id="modMachineIDPartText" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <TextField fx:id="modMinPartText" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                    </children>
+                </GridPane>
+                <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                    <children>
+                        <Label fx:id="ErrorLabel" prefWidth="250.0" textFill="RED" />
+                        <Button mnemonicParsing="false" onAction="#onActModPartSaveBtn" text="Save" />
+                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#onActionModifyPartCancelButton" text="Cancel" />
+                    </children>
+                    <padding>
+                        <Insets left="50.0" right="50.0" />
+                    </padding>
+                </HBox>
+            </children>
+            <padding>
+                <Insets top="20.0" />
+            </padding>
+        </VBox>
+    </children>
+</AnchorPane>
