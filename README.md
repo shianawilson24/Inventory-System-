@@ -1,45 +1,69 @@
-Project Overview:
-In this project, I've been entrusted with developing an advanced inventory program tailored for our growing manufacturing organization. Our existing manual data entry method needs an upgrade, and I'll be building a JavaFX-based application to streamline our inventory management. The goal is to ensure that the application matches the provided GUI mock-up and adheres to the UML class diagram while meeting our specific business needs.
-
-Primary Goals:
-
-I. Crafting the User Interface:
-
-My task involves creating a robust JavaFX application that faithfully follows the layout presented in the GUI mock-up.
-I'll design forms for various functions, including Main, Add Part, Modify Part, Add Product, and Modify Product.
-It's essential to provide comprehensive Javadoc comments, explaining any error corrections and suggesting potential enhancements for the future.
-II. Developing the Application Logic:
-
-I'll need to build a set of classes that align with the elements outlined in the UML class diagram.
-Incorporating concepts such as inheritance, abstract/concrete classes, and managing instance/static variables/methods will be integral to the development process.
-Main Form:
-
-One of my key objectives is to create a seamless experience for adding, modifying, and deleting parts and products.
-I need to develop a mechanism for searching parts/products using either ID or name, with the ability to highlight or filter results.
-Including a functional Exit button is crucial to provide users with a smooth way to close the application.
-Part Forms:
-
-For the Add Part Form:
-
-I'll need to tailor radio buttons based on the user's choice (In-House/Outsourced).
-Ensuring that unique part IDs are generated automatically while disabling the ID field.
-Capturing comprehensive part details, saving the input, and guiding the user back to the Main form.
-As for the Modify Part Form:
-
-My task is to populate text fields with the existing part data.
-I'll also ensure the proper adjustment of radio buttons while retaining the part ID.
-Enabling users to modify part details, saving changes, and smoothly transitioning back to the Main form are integral.
-Product Forms:
-
-In the Add Product Form:
-I'll automate the generation of unique product IDs while disabling the ID field to prevent unwanted changes.
-Gathering comprehensive product details, associating relevant parts, and securely saving the information.
-After successful data entry or choosing to cancel, I'll ensure a seamless return to the Main form.
-Regarding the Modify Product Form:
-My responsibility is to populate relevant fields with existing product data and their associated parts.
-I'll work on enabling smooth modifications to product details, allowing associations/disassociations of parts, and securely saving changes.
-My focus will be on ensuring a seamless transition back to the Main form after saving or canceling.
-Error Management:
-
-My approach involves implementing meticulous input validation and logical checks using intuitive UI dialog boxes.
-This will encompass various scenarios, such as managing min/max values, handling part-product relationships, and confirming user actions.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+</head>
+<body>
+  <h1>Project Overview</h1>
+  <p>
+    This project involves developing an advanced inventory program for a growing manufacturing organization. Using JavaFX, the goal is to create an application that streamlines inventory management, matching provided GUI mock-ups and adhering to the UML class diagram while meeting specific business needs.
+  </p>
+  <h2>Primary Goals</h2>
+  <ol>
+    <li>
+      <h3>Crafting the User Interface:</h3>
+      <p>
+        Create a robust JavaFX application following the GUI mock-up layout. Design forms for Main, Add Part, Modify Part, Add Product, and Modify Product. Provide comprehensive Javadoc comments and ensure future enhancements are suggested.
+      </p>
+    </li>
+    <li>
+      <h3>Developing the Application Logic:</h3>
+      <p>
+        Build classes aligned with the UML class diagram, incorporating concepts such as inheritance and managing variables/methods. Focus on seamless operations for adding, modifying, and deleting parts and products. Implement a search mechanism and an Exit button.
+      </p>
+    </li>
+    <li>
+      <h3>Error Management:</h3>
+      <p>
+        Implement meticulous input validation and logical checks using intuitive UI dialog boxes. Handle scenarios such as managing min/max values and part-product relationships.
+      </p>
+    </li>
+  </ol>
+  <h2>Main Form</h2>
+  <p>
+    Create a seamless experience for adding, modifying, and deleting parts and products. Develop a search mechanism, highlighting or filtering results, and include a functional Exit button.
+  </p>
+  <h2>Part Forms</h2>
+  <ul>
+    <li>
+      <h3>Add Part Form:</h3>
+      <p>
+        Tailor radio buttons based on user choice, automatically generate unique part IDs, and capture comprehensive part details.
+      </p>
+    </li>
+    <li>
+      <h3>Modify Part Form:</h3>
+      <p>
+        Populate fields with existing part data, retain part ID, enable modifications, and ensure a smooth transition back to the Main form.
+      </p>
+    </li>
+  </ul>
+  <h2>Product Forms</h2>
+  <ul>
+    <li>
+      <h3>Add Product Form:</h3>
+      <p>
+        Automate generation of unique product IDs, gather comprehensive product details, and associate relevant parts.
+      </p>
+    </li>
+    <li>
+      <h3>Modify Product Form:</h3>
+      <p>
+        Populate fields with existing product data and associated parts, enable modifications, and ensure a seamless transition back to the Main form.
+      </p>
+    </li>
+  </ul>
+</body>
+</html>
